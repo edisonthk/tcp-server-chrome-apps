@@ -1,0 +1,27 @@
+{
+    "name": "Hello World",
+    "description": "A Hello World app",
+    "manifest_version": 2,
+    "minimum_chrome_version": "33",
+    "version": "0.0.1",
+    "icons": {
+        "16": "/icons/icon16x16.png",
+        "48": "/icons/icon48x48.png",
+        "60": "/icons/icon60x60.png",
+        "128": "/icons/icon128x128.png"
+    },
+    "app": {
+        "background": {
+            "scripts": ["main.js"]
+        }
+    },
+    
+    "permissions" : [
+    ],
+
+    "sockets": {
+        "tcpServer": {
+            "listen" : "127.0.0.1:8080"
+        }
+    }
+}
